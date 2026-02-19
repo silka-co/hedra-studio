@@ -1,0 +1,74 @@
+/* ── Width tiers via data attribute ─────────────────────────────────────── */
+/* Each tier maps item.flyoutSize → the matching --flyout-{size} CSS token.  */
+/* The panel uses --panel-width for both the width and the translateX amount. */
+
+.panel[data-size='sm'] { --panel-width: var(--flyout-sm); }
+.panel[data-size='md'] { --panel-width: var(--flyout-md); }
+.panel[data-size='lg'] { --panel-width: var(--flyout-lg); }
+.panel[data-size='xl'] { --panel-width: var(--flyout-xl); }
+
+/* ── Base panel ─────────────────────────────────────────────────────────── */
+
+.panel {
+  position: absolute;
+  left: var(--sidebar-width);
+  top: 0;
+  bottom: 0;
+  width: var(--panel-width, var(--flyout-md));
+  background: var(--bg-surface);
+  border-right: 1px solid var(--border-subtle);
+  /* Slide hidden to the left + fade out */
+  transform: translateX(calc(-1 * (var(--panel-width, var(--flyout-md)) + 10px)));
+  opacity: 0;
+  transition:
+    transform var(--duration-normal) cubic-bezier(0.16, 1, 0.3, 1),
+    opacity var(--duration-fast) ease;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  pointer-events: none;
+  font-family: var(--font-family);
+}
+
+/* ── Open state ─────────────────────────────────────────────────────────── */
+
+.open {
+  transform: translateX(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* ── Header ─────────────────────────────────────────────────────────────── */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-md) var(--space-lg);
+  border-bottom: 1px solid var(--border-subtle);
+  min-height: 42px;
+  flex-shrink: 0;
+}
+
+.headerTitle {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-primary);
+}
+
+.helpIcon {
+  color: var(--text-tertiary);
+  cursor: pointer;
+  display: flex;
+}
+
+.helpIcon:hover {
+  color: var(--text-secondary);
+}
+
+/* ── Scrollable body ────────────────────────────────────────────────────── */
+
+.body {
+  flex: 1;
+  overflow-y: auto;
+}

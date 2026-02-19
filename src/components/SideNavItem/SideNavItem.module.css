@@ -1,0 +1,54 @@
+.navItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* Sidebar width minus 8px padding on each side */
+  width: calc(var(--sidebar-width) - 8px);
+  height: 44px;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  color: var(--text-tertiary);
+  background: transparent;
+  transition: color var(--duration-fast) ease, background var(--duration-fast) ease;
+  position: relative;
+  gap: 2px;
+  user-select: none;
+}
+
+.hovered {
+  color: var(--text-primary);
+  background: var(--bg-hover);
+}
+
+.active {
+  color: var(--text-primary);
+  background: var(--bg-active);
+}
+
+/* ── Active indicator bar ───────────────────────────────────────────────── */
+
+.indicator {
+  position: absolute;
+  left: -4px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: var(--indicator-width);
+  height: 20px;
+  border-radius: var(--radius-full);
+  background: var(--accent-primary);
+  transition: all var(--duration-normal) ease;
+}
+
+/* ── Label ──────────────────────────────────────────────────────────────── */
+
+.label {
+  font-size: var(--font-size-2xs);
+  font-weight: var(--font-weight-regular);
+  letter-spacing: var(--tracking-normal);
+  line-height: 1;
+}
+
+.active .label {
+  font-weight: var(--font-weight-medium);
+}

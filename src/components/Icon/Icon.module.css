@@ -1,0 +1,5 @@
+/*
+  Icon renders raw inline SVG with stroke="currentColor".
+  Colour and size are controlled entirely by the parent's CSS `color`
+  and the `size` prop — no additional wrapper styles needed.
+*/

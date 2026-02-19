@@ -1,0 +1,126 @@
+:root {
+  /* ─── Primitives: Gray ──────────────────────────────────────────────────── */
+  --color-gray-50: #fafafa;
+  --color-gray-100: #f0f0f0;
+  --color-gray-200: #e0e0e0;
+  --color-gray-300: #c0c0c0;
+  --color-gray-400: #8a8a8a;
+  --color-gray-500: #6b6b6b;
+  --color-gray-600: #4a4a4a;
+  --color-gray-700: #333333;
+  --color-gray-800: #242424;
+  --color-gray-850: #1e1e1e;
+  --color-gray-900: #181818;
+  --color-gray-950: #121212;
+  --color-gray-1000: #0a0a0a;
+
+  /* ─── Primitives: Blue ──────────────────────────────────────────────────── */
+  --color-blue-400: #60a5fa;
+  --color-blue-500: #3b82f6;
+  --color-blue-600: #2563eb;
+
+  /* ─── Primitives: Purple ────────────────────────────────────────────────── */
+  --color-purple-400: #a78bfa;
+  --color-purple-500: #8b5cf6;
+
+  /* ─── Primitives: Amber ─────────────────────────────────────────────────── */
+  --color-amber-500: #f59e0b;
+  --color-amber-500-alpha-light: #f59e0b30;
+
+  /* ─── Semantic: Background ──────────────────────────────────────────────── */
+  --bg-app: #0a0a0a;
+  --bg-surface: #141414;
+  --bg-surface-raised: #1a1a1a;
+  --bg-surface-overlay: #1e1e1e;
+  --bg-hover: #ffffff0d;
+  --bg-active: #ffffff14;
+  --bg-selected: #ffffff1a;
+
+  /* ─── Semantic: Text ────────────────────────────────────────────────────── */
+  --text-primary: #f0f0f0;
+  --text-secondary: #8a8a8a;
+  --text-tertiary: #6b6b6b;
+  --text-inverse: #0a0a0a;
+
+  /* ─── Semantic: Border ──────────────────────────────────────────────────── */
+  --border-default: #ffffff0f;
+  --border-subtle: #ffffff08;
+  --border-strong: #ffffff1a;
+
+  /* ─── Semantic: Accent ──────────────────────────────────────────────────── */
+  --accent-primary: #3b82f6;
+  --accent-primary-hover: #2563eb;
+  --accent-primary-alpha-light: #3b82f630;
+  --accent-secondary: #8b5cf6;
+  --accent-secondary-alpha-light: #8b5cf630;
+  --accent-secondary-alpha-med: #8b5cf640;
+
+  /* ─── Spacing ───────────────────────────────────────────────────────────── */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 12px;
+  --space-lg: 16px;
+  --space-xl: 20px;
+  --space-2xl: 24px;
+  --space-3xl: 32px;
+  --space-4xl: 40px;
+
+  /* ─── Radius ────────────────────────────────────────────────────────────── */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+  --radius-full: 9999px;
+
+  /* ─── Typography: Family ────────────────────────────────────────────────── */
+  --font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  /* ─── Typography: Size ──────────────────────────────────────────────────── */
+  --font-size-2xs: 9px;
+  --font-size-xs: 11px;
+  --font-size-sm: 12px;
+  --font-size-md: 13px;
+  --font-size-lg: 14px;
+  --font-size-xl: 16px;
+  --font-size-2xl: 18px;
+  --font-size-3xl: 22px;
+
+  /* ─── Typography: Weight ────────────────────────────────────────────────── */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* ─── Typography: Letter Spacing ────────────────────────────────────────── */
+  --tracking-wide: 0.05em;
+  --tracking-normal: 0.01em;
+
+  /* ─── Shadows ───────────────────────────────────────────────────────────── */
+  --shadow-dropdown: 0 8px 32px rgba(0, 0, 0, 0.4), 0 2px 8px rgba(0, 0, 0, 0.2);
+  --shadow-canvas: 0 0 80px rgba(0, 0, 0, 0.3);
+
+  /* ─── Duration ──────────────────────────────────────────────────────────── */
+  --duration-fast: 0.15s;
+  --duration-normal: 0.25s;
+  --duration-slow: 0.3s;
+
+  /* ─── Opacity ───────────────────────────────────────────────────────────── */
+  --opacity-dim: 0.4;
+
+  /* ─── Flyout widths ─────────────────────────────────────────────────────── */
+  --flyout-sm: 240px;
+  --flyout-md: 300px;
+  --flyout-lg: 380px;
+  --flyout-xl: 480px;
+
+  /* ─── Sidebar ───────────────────────────────────────────────────────────── */
+  --sidebar-width: 52px;
+  --sidebar-icon-size: 20px;
+
+  /* ─── Top Nav ───────────────────────────────────────────────────────────── */
+  --top-nav-height: 44px;
+
+  /* ─── Component-specific ────────────────────────────────────────────────── */
+  --indicator-width: 3px;
+  --dropdown-height: 28px;
+}

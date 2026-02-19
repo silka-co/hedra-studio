@@ -1,0 +1,51 @@
+.canvas {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-app);
+  position: relative;
+  overflow: hidden;
+}
+
+/* ── Grid overlay ───────────────────────────────────────────────────────── */
+
+.grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(var(--border-subtle) 1px, transparent 1px),
+    linear-gradient(90deg, var(--border-subtle) 1px, transparent 1px);
+  background-size: 60px 60px;
+  opacity: var(--opacity-dim);
+  pointer-events: none;
+}
+
+/* ── Canvas frame ───────────────────────────────────────────────────────── */
+
+.frame {
+  width: min(65%, 720px);
+  max-height: 80%;
+  background: var(--bg-surface-raised);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-default);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-md);
+  color: var(--text-tertiary);
+  position: relative;
+  transition: aspect-ratio var(--duration-slow) ease;
+  box-shadow: var(--shadow-canvas);
+  font-family: var(--font-family);
+}
+
+.frameLabel {
+  font-size: var(--font-size-sm);
+}
+
+.frameHint {
+  font-size: var(--font-size-xs);
+  color: var(--text-tertiary);
+}

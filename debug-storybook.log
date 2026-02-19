@@ -1,0 +1,255 @@
+[11:10:33.923] [INFO] [36mInitializing Storybook[39m
+[11:10:34.290] [DEBUG] Getting package.json info for /Users/silka/hedrastudio/package.json...
+[11:10:34.290] [DEBUG] Getting CLI versions from NPM for storybook...
+[11:10:34.290] [DEBUG] Executing command: npm info storybook version
+[11:10:34.719] [INFO] Adding Storybook version 10.2.10 to your project
+[11:10:34.720] [DEBUG] Project type detected: react
+[11:10:43.538] [PROMPT] We found a .storybook config directory in your project.
+We assume that Storybook is already instantiated for your project. Do you still want to continue and force the initialization? {"choice":true}
+[11:10:43.539] [DEBUG] Using cached package.json for /Users/silka/hedrastudio/package.json...
+[11:10:43.539] [INFO] Framework detected: react-vite
+[11:10:43.540] [DEBUG] Getting installed version for vitest...
+[11:10:43.540] [DEBUG] Executing command: npm ls --json --depth=99 2>/dev/null
+[11:10:43.779] [DEBUG] Executing command: npm ls --json --depth=0 2>/dev/null
+[11:10:43.964] [DEBUG] Error finding installations for vitest: ExecaError: Command failed with exit code 1: npm ls --json '--depth=0' '2>/dev/null'
+
+{
+  "version": "0.0.1",
+  "name": "hedra-studio"
+}
+[11:10:43.964] [DEBUG] No installations found for vitest
+[11:10:43.964] [DEBUG] Getting installed version for msw...
+[11:10:43.964] [DEBUG] Executing command: npm ls --json --depth=99 2>/dev/null
+[11:10:44.153] [DEBUG] Executing command: npm ls --json --depth=0 2>/dev/null
+[11:10:44.344] [DEBUG] Error finding installations for msw: ExecaError: Command failed with exit code 1: npm ls --json '--depth=0' '2>/dev/null'
+
+{
+  "version": "0.0.1",
+  "name": "hedra-studio"
+}
+[11:10:44.344] [DEBUG] No installations found for msw
+[11:10:50.615] [PROMPT] New to Storybook? {"choice":true}
+[11:10:51.088] [INFO] base-generator-task-start: Generating Storybook configuration
+[11:10:51.089] [DEBUG] Using cached package.json for /Users/silka/hedrastudio/package.json...
+[11:10:51.089] [DEBUG] Using cached package.json for /Users/silka/hedrastudio/package.json...
+[11:10:51.089] [DEBUG] Using cached package.json for /Users/silka/hedrastudio/package.json...
+[11:10:51.090] [INFO] base-generator-task: - Configuring main.ts
+[11:10:51.092] [INFO] base-generator-task: - Configuring preview.ts
+[11:10:51.093] [INFO] base-generator-task: - Adding Storybook command to package.json
+[11:10:51.093] [DEBUG] Getting package.json info for /Users/silka/hedrastudio/package.json...
+[11:10:51.093] [DEBUG] Using cached package.json for /Users/silka/hedrastudio/package.json...
+[11:10:51.093] [DEBUG] Using cached package.json for /Users/silka/hedrastudio/package.json...
+[11:10:51.094] [INFO] base-generator-task: - Copying framework templates
+[11:10:51.136] [DEBUG] Executing command: npm config get registry -ws=false -iwr
+[11:10:51.555] [INFO] base-generator-task-success: Storybook configuration generated
+[11:10:51.556] [DEBUG] Using cached package.json for /Users/silka/hedrastudio/package.json...
+[11:10:51.556] [DEBUG] Using cached installed version for vitest...
+[11:10:51.557] [DEBUG] Getting installed version for @vitest/coverage-v8...
+[11:10:51.557] [DEBUG] Executing command: npm ls --json --depth=99 2>/dev/null
+[11:10:51.771] [DEBUG] Executing command: npm ls --json --depth=0 2>/dev/null
+[11:10:51.954] [DEBUG] Error finding installations for @vitest/coverage-v8: ExecaError: Command failed with exit code 1: npm ls --json '--depth=0' '2>/dev/null'
+
+{
+  "version": "0.0.1",
+  "name": "hedra-studio"
+}
+[11:10:51.954] [DEBUG] No installations found for @vitest/coverage-v8
+[11:10:51.954] [DEBUG] Getting installed version for @vitest/coverage-istanbul...
+[11:10:51.954] [DEBUG] Executing command: npm ls --json --depth=99 2>/dev/null
+[11:10:52.161] [DEBUG] Executing command: npm ls --json --depth=0 2>/dev/null
+[11:10:52.361] [DEBUG] Error finding installations for @vitest/coverage-istanbul: ExecaError: Command failed with exit code 1: npm ls --json '--depth=0' '2>/dev/null'
+
+{
+  "version": "0.0.1",
+  "name": "hedra-studio"
+}
+[11:10:52.361] [DEBUG] No installations found for @vitest/coverage-istanbul
+[11:10:52.361] [INFO] adding-dependencies-task-start: Adding dependencies to package.json
+[11:10:52.361] [INFO] adding-dependencies-task: Adding devDependencies:
+- @vitest/coverage-v8@^4.0.18
+[11:10:52.361] [DEBUG] Using cached package.json for /Users/silka/hedrastudio/package.json...
+[11:10:52.361] [DEBUG] Getting CLI versions from NPM for @vitest/coverage-v8...
+[11:10:52.361] [DEBUG] Executing command: npm info @vitest/coverage-v8 version
+[11:10:52.737] [DEBUG] Using cached package.json for /Users/silka/hedrastudio/package.json...
+[11:10:52.737] [INFO] adding-dependencies-task-success: Dependencies added to package.json
+[11:10:52.738] [INFO] Installing dependencies...
+[11:10:52.738] [INFO] install-dependencies-spinner-start: Installing dependencies...
+[11:10:52.738] [DEBUG] Executing command: npm install
+[11:10:55.788] [ERROR] Installation of dependencies failed! {"error":"ExecaError: Command failed with exit code 1: npm install\n\nnpm error code ERESOLVE\nnpm error ERESOLVE unable to resolve dependency tree\nnpm error\nnpm error While resolving: hedra-studio@0.0.1\nnpm error Found: storybook@8.6.17\nnpm error node_modules/storybook\nnpm error   dev storybook@\"^8.4.0\" from the root project\nnpm error\nnpm error Could not resolve dependency:\nnpm error peer storybook@\"^0.0.0-0 || ^10.1.0 || ^10.1.0-0 || ^10.2.0-0 || ^10.3.0-0\" from @chromatic-com/storybook@5.0.1\nnpm error node_modules/@chromatic-com/storybook\nnpm error   dev @chromatic-com/storybook@\"^5.0.1\" from the root project\nnpm error\nnpm error Fix the upstream dependency conflict, or retry\nnpm error this command with --force or --legacy-peer-deps\nnpm error to accept an incorrect (and potentially broken) dependency resolution.\nnpm error\nnpm error\nnpm error For a full report see:\nnpm error /Users/silka/.npm/_logs/2026-02-19T16_10_52_795Z-eresolve-report.txt\nnpm error A complete log of this run can be found in: /Users/silka/.npm/_logs/2026-02-19T16_10_52_795Z-debug-0.log\n    at getFinalError (file:///Users/silka/.npm/_npx/c888cdf029e30e47/node_modules/storybook/dist/_node-chunks/chunk-URMZXQZT.js:13109:10)\n    at makeError (file:///Users/silka/.npm/_npx/c888cdf029e30e47/node_modules/storybook/dist/_node-chunks/chunk-URMZXQZT.js:14645:15)\n    at getAsyncResult (file:///Users/silka/.npm/_npx/c888cdf029e30e47/node_modules/storybook/dist/_node-chunks/chunk-URMZXQZT.js:17291:158)\n    at handlePromise (file:///Users/silka/.npm/_npx/c888cdf029e30e47/node_modules/storybook/dist/_node-chunks/chunk-URMZXQZT.js:17277:162)\n    at async Object.executeTaskWithSpinner (file:///Users/silka/.npm/_npx/c888cdf029e30e47/node_modules/storybook/dist/_node-chunks/chunk-7ZPQ47DO.js:3683:11)\n    at async NPMProxy.installDependencies (file:///Users/silka/.npm/_npx/c888cdf029e30e47/node_modules/storybook/dist/_node-chunks/chunk-URMZXQZT.js:11258:5)\n    at async DependencyInstallationCommand.execute (file:///Users/silka/.npm/_npx/c888cdf029e30e47/node_modules/create-storybook/dist/_node-chunks/chunk-ZWXSN5R5.js:2072:9)\n    at async doInitiate (file:///Users/silka/.npm/_npx/c888cdf029e30e47/node_modules/create-storybook/dist/_node-chunks/chunk-ZWXSN5R5.js:2848:38)\n    at async file:///Users/silka/.npm/_npx/c888cdf029e30e47/node_modules/create-storybook/dist/_node-chunks/chunk-ZWXSN5R5.js:2882:20\n    at async withTelemetry (file:///Users/silka/.npm/_npx/c888cdf029e30e47/node_modules/storybook/dist/_node-chunks/chunk-S3MWHNYJ.js:218:12)"}
+[11:10:55.788] [ERROR] install-dependencies-spinner-error: [31mInstallation of dependencies failed![39m
+[11:10:55.791] [INFO] configure-addons-task-start: Configuring addons...
+[11:10:55.791] [INFO] configure-addons-task: Configuring @chromatic-com/storybook...
+[11:10:55.791] [INFO] configure-addons-task: @chromatic-com/storybook configured
+
+[11:10:55.792] [INFO] configure-addons-task: Configuring @storybook/addon-vitest...
+[11:10:55.792] [DEBUG] Getting package.json info for /Users/silka/hedrastudio/package.json...
+[11:10:55.792] [DEBUG] Using cached package.json for /Users/silka/hedrastudio/package.json...
+[11:10:55.792] [DEBUG] Using cached installed version for vitest...
+[11:10:55.792] [DEBUG] Vitest version specifier: 4.0.18
+[11:10:55.794] [DEBUG] Using cached installed version for vitest...
+[11:10:55.794] [DEBUG] Using cached installed version for msw...
+[11:10:55.795] [INFO] Found existing Vitest setup file, reusing:
+[11:10:55.795] [INFO] /Users/silka/hedrastudio/.storybook/vitest.setup.ts
+
+[11:10:55.800] [INFO] [32mVitest for Storybook is already properly configured. Skipping setup.[39m
+[11:10:55.800] [INFO] Setting up a11y addon for @storybook/addon-vitest
+[11:10:55.800] [INFO] Setting up a11y addon for @storybook/addon-vitest
+[11:10:55.800] [DEBUG] Executing command: npx storybook@10.2.10 automigrate addon-a11y-addon-test --loglevel silent --yes --skip-doctor --package-manager npm --skip-install
+[11:10:58.020] [INFO] a11y addon setup successfully
+[11:10:58.020] [INFO] [32ma11y addon setup successfully[39m
+[11:10:58.020] [INFO] [32m@storybook/addon-vitest setup completed successfully[39m
+[11:10:58.021] [INFO] @storybook/addon-vitest is now configured and you're ready to run your tests!
+Here are a couple of tips to get you started:
+
+• You can run tests with "[36mnpx vitest --project=storybook[39m"
+• Vitest IDE extension shows all stories as tests in your editor!
+
+Check the documentation for more information about its features and options at:
+https://storybook.js.org/docs/next/writing-tests/integrations/vitest-addon
+[11:10:58.021] [INFO] configure-addons-task: @storybook/addon-vitest configured
+
+[11:10:58.021] [INFO] configure-addons-task: Configuring @storybook/addon-a11y...
+[11:10:58.021] [DEBUG] Executing command: npx storybook@10.2.10 automigrate addon-a11y-addon-test --loglevel silent --skip-doctor --package-manager npm --config-dir .storybook
+[11:11:00.064] [INFO] configure-addons-task: @storybook/addon-a11y configured
+
+[11:11:00.064] [INFO] configure-addons-task: Configuring @storybook/addon-docs...
+[11:11:00.065] [INFO] configure-addons-task: @storybook/addon-docs configured
+
+[11:11:00.065] [INFO] configure-addons-task: Configuring @storybook/addon-onboarding...
+[11:11:00.066] [INFO] configure-addons-task: @storybook/addon-onboarding configured
+
+[11:11:00.066] [INFO] configure-addons-task-success: Addons configured successfully
+[11:11:00.066] [INFO] [2m✅ @chromatic-com/storybook[22m
+[11:11:00.067] [INFO] [2m✅ @storybook/addon-vitest[22m
+[11:11:00.067] [INFO] [2m✅ @storybook/addon-a11y[22m
+[11:11:00.067] [INFO] [2m✅ @storybook/addon-docs[22m
+[11:11:00.067] [INFO] [2m✅ @storybook/addon-onboarding[22m
+[11:11:00.067] [INFO] Playwright browser binaries are necessary for @storybook/addon-vitest. The download can take some time. If you don't want to wait, you can skip the installation and run the following command manually later:
+[36mnpx playwright install chromium --with-deps[39m
+[11:11:04.623] [PROMPT] Do you want to install Playwright with Chromium now? {"choice":true}
+[11:11:04.623] [INFO] Installing Playwright browser binaries (press "c" to abort)
+[11:11:04.623] [INFO] playwright-installation-spinner-start: Installing Playwright browser binaries (press "c" to abort)
+[11:11:04.623] [DEBUG] Executing command: npx playwright install chromium --with-deps
+[11:11:09.004] [INFO] Installing Playwright browser binaries (press "c" to abort): Downloading Chrome for Testing 145.0.7632.6 (playwright chromium v1208)[2m from https://cdn.playwright.dev/builds/cft/145.0.7632.6/mac-arm64/chrome-mac-arm64.zip[22m
+
+[11:11:09.004] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): Downloading Chrome for Te
+[11:11:09.398] [INFO] Installing Playwright browser binaries (press "c" to abort): |                                                                                |   0% of 162.3 MiB
+
+[11:11:09.398] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |                        
+[11:11:11.402] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■                                                                        |  10% of 162.3 MiB
+
+[11:11:11.402] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■                
+[11:11:13.075] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■                                                                |  20% of 162.3 MiB
+
+[11:11:13.075] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■        
+[11:11:15.434] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 162.3 MiB
+
+[11:11:15.434] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■
+[11:11:17.101] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 162.3 MiB
+
+[11:11:17.101] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■
+[11:11:18.762] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 162.3 MiB
+
+[11:11:18.762] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■
+[11:11:20.637] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 162.3 MiB
+
+[11:11:20.637] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■
+[11:11:22.245] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 162.3 MiB
+
+[11:11:22.246] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■
+[11:11:23.777] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 162.3 MiB
+
+[11:11:23.777] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■
+[11:11:25.722] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 162.3 MiB
+
+[11:11:25.722] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■
+[11:11:27.380] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 162.3 MiB
+
+[11:11:27.380] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■
+[11:11:29.184] [INFO] Installing Playwright browser binaries (press "c" to abort): Chrome for Testing 145.0.7632.6 (playwright chromium v1208) downloaded to /Users/silka/Library/Caches/ms-playwright/chromium-1208
+
+[11:11:29.184] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): Chrome for Testing 145.0.
+[11:11:29.185] [INFO] Installing Playwright browser binaries (press "c" to abort): Downloading FFmpeg (playwright ffmpeg v1011)[2m from https://cdn.playwright.dev/dbazure/download/playwright/builds/ffmpeg/1011/ffmpeg-mac-arm64.zip[22m
+
+[11:11:29.185] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): Downloading FFmpeg (playw
+[11:11:29.477] [INFO] Installing Playwright browser binaries (press "c" to abort): |                                                                                |   0% of 1 MiB
+
+[11:11:29.477] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |                        
+[11:11:29.501] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■                                                                        |  10% of 1 MiB
+
+[11:11:29.501] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■                
+[11:11:29.521] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■                                                                |  20% of 1 MiB
+
+[11:11:29.521] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■        
+[11:11:29.561] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  31% of 1 MiB
+
+[11:11:29.561] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■
+[11:11:29.566] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 1 MiB
+
+[11:11:29.566] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■
+[11:11:29.580] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 1 MiB
+
+[11:11:29.580] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■
+[11:11:29.603] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 1 MiB
+
+[11:11:29.603] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■
+[11:11:29.626] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  71% of 1 MiB
+
+[11:11:29.626] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■
+[11:11:29.632] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 1 MiB
+
+[11:11:29.632] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■
+[11:11:29.647] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 1 MiB
+
+[11:11:29.647] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■
+[11:11:29.654] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 1 MiB
+
+[11:11:29.654] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■
+[11:11:29.677] [INFO] Installing Playwright browser binaries (press "c" to abort): FFmpeg (playwright ffmpeg v1011) downloaded to /Users/silka/Library/Caches/ms-playwright/ffmpeg-1011
+
+[11:11:29.677] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): FFmpeg (playwright ffmpeg
+[11:11:29.677] [INFO] Installing Playwright browser binaries (press "c" to abort): Downloading Chrome Headless Shell 145.0.7632.6 (playwright chromium-headless-shell v1208)[2m from https://cdn.playwright.dev/builds/cft/145.0.7632.6/mac-arm64/chrome-headless-shell-mac-arm64.zip[22m
+
+[11:11:29.677] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): Downloading Chrome Headle
+[11:11:29.998] [INFO] Installing Playwright browser binaries (press "c" to abort): |                                                                                |   0% of 91.1 MiB
+
+[11:11:29.998] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |                        
+[11:11:31.120] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■                                                                        |  10% of 91.1 MiB
+
+[11:11:31.120] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■                
+[11:11:32.037] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■                                                                |  20% of 91.1 MiB
+
+[11:11:32.037] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■        
+[11:11:33.006] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 91.1 MiB
+
+[11:11:33.006] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■
+[11:11:34.023] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 91.1 MiB
+
+[11:11:34.023] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■
+[11:11:34.917] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 91.1 MiB
+
+[11:11:34.917] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■
+[11:11:36.028] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 91.1 MiB
+
+[11:11:36.028] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■
+[11:11:37.102] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 91.1 MiB
+
+[11:11:37.102] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■
+[11:11:38.069] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 91.1 MiB
+
+[11:11:38.069] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■
+[11:11:39.089] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 91.1 MiB
+
+[11:11:39.089] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■
+[11:11:39.919] [INFO] Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 91.1 MiB
+
+[11:11:39.919] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): |■■■■■■■■■■■■■■■■■■■■■■■■
+[11:11:40.896] [INFO] Installing Playwright browser binaries (press "c" to abort): Chrome Headless Shell 145.0.7632.6 (playwright chromium-headless-shell v1208) downloaded to /Users/silka/Library/Caches/ms-playwright/chromium_headless_shell-1208
+
+[11:11:40.896] [INFO] playwright-installation-spinner: Installing Playwright browser binaries (press "c" to abort): Chrome Headless Shell 145
+[11:11:40.906] [INFO] Playwright browser binaries installed successfully
+[11:11:40.906] [INFO] playwright-installation-spinner-stop: Playwright browser binaries installed successfully
+[11:11:41.197] [WARN] Storybook setup completed, but some non-blocking errors occurred. Please check the log file below for details.
+[11:11:41.199] [INFO] To run Storybook manually, run [36mnpm run storybook[39m. CTRL+C to stop.
+[11:11:41.201] [INFO] Wanna know more about Storybook? Check out [36mhttps://storybook.js.org/[39m
+Having trouble or want to chat? Join us at [36mhttps://discord.gg/storybook/[39m

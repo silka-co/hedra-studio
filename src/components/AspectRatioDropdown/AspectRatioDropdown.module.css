@@ -1,0 +1,95 @@
+.root {
+  position: relative;
+}
+
+/* ── Trigger button ─────────────────────────────────────────────────────── */
+
+.trigger {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  height: var(--dropdown-height);
+  background: var(--bg-hover);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  padding: 0 var(--space-sm);
+  color: var(--text-primary);
+  font-size: var(--font-size-sm);
+  font-family: var(--font-family);
+  cursor: pointer;
+  transition: border-color var(--duration-fast);
+}
+
+.triggerOpen {
+  border-color: var(--border-strong);
+}
+
+/* ── Chevron ────────────────────────────────────────────────────────────── */
+
+.chevron {
+  display: flex;
+  transition: transform var(--duration-normal);
+}
+
+.chevronOpen {
+  transform: rotate(180deg);
+}
+
+/* ── Dropdown menu ──────────────────────────────────────────────────────── */
+
+.menu {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  min-width: 160px;
+  background: var(--bg-surface-overlay);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xs);
+  z-index: 1000;
+  box-shadow: var(--shadow-dropdown);
+}
+
+/* ── Menu items ─────────────────────────────────────────────────────────── */
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: var(--space-sm) var(--space-md);
+  background: transparent;
+  border: none;
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary);
+  font-size: var(--font-size-sm);
+  font-family: var(--font-family);
+  cursor: pointer;
+  transition: background var(--duration-fast);
+}
+
+.menuItem:hover {
+  background: var(--bg-hover);
+}
+
+.menuItemSelected {
+  background: var(--bg-selected);
+  color: var(--text-primary);
+}
+
+.menuItemSelected:hover {
+  background: var(--bg-selected);
+}
+
+.menuItemLabel {
+  font-weight: var(--font-weight-regular);
+}
+
+.menuItemLabelActive {
+  font-weight: var(--font-weight-medium);
+}
+
+.menuItemDesc {
+  font-size: var(--font-size-xs);
+  color: var(--text-tertiary);
+}

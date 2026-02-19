@@ -1,0 +1,56 @@
+.root {
+  padding: var(--space-md);
+  font-family: var(--font-family);
+}
+
+/* ── Search bar ─────────────────────────────────────────────────────────── */
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  background: var(--bg-hover);
+  border-radius: var(--radius-md);
+  padding: var(--space-sm) var(--space-md);
+  border: 1px solid var(--border-default);
+  color: var(--text-tertiary);
+}
+
+.input {
+  flex: 1;
+  background: none;
+  border: none;
+  outline: none;
+  color: var(--text-primary);
+  font-size: var(--font-size-sm);
+  font-family: var(--font-family);
+}
+
+.input::placeholder {
+  color: var(--text-tertiary);
+}
+
+/* ── Section label ──────────────────────────────────────────────────────── */
+
+.sectionLabel {
+  margin: var(--space-lg) 0 var(--space-xs);
+  color: var(--text-tertiary);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wide);
+}
+
+/* ── Recent items ───────────────────────────────────────────────────────── */
+
+.recentItem {
+  padding: var(--space-sm) 0;
+  color: var(--text-secondary);
+  font-size: var(--font-size-sm);
+  cursor: pointer;
+  transition: color var(--duration-fast);
+}
+
+.recentItem:hover {
+  color: var(--text-primary);
+}

@@ -1,0 +1,93 @@
+.root {
+  padding: var(--space-md);
+  font-family: var(--font-family);
+}
+
+/* ── Header ─────────────────────────────────────────────────────────────── */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-md);
+}
+
+.ownerLabel {
+  font-size: var(--font-size-xs);
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wide);
+  font-weight: var(--font-weight-medium);
+}
+
+.newBtn {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  background: var(--accent-primary);
+  border: none;
+  border-radius: var(--radius-sm);
+  color: #fff;
+  font-size: var(--font-size-xs);
+  font-family: var(--font-family);
+  padding: var(--space-xs) var(--space-sm);
+  cursor: pointer;
+  transition: background var(--duration-fast);
+}
+
+.newBtn:hover {
+  background: var(--accent-primary-hover);
+}
+
+/* ── Project rows ───────────────────────────────────────────────────────── */
+
+.projectRow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-sm);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  margin-bottom: 2px;
+  transition: background var(--duration-fast);
+}
+
+.projectRow:hover {
+  background: var(--bg-hover);
+}
+
+/* ── Thumbnail ───────────────────────────────────────────────────────────── */
+
+.thumb {
+  width: 40px;
+  height: var(--dropdown-height);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-default);
+  flex-shrink: 0;
+}
+
+.thumbBlue {
+  background: var(--accent-primary-alpha-light);
+}
+
+.thumbPurple {
+  background: var(--accent-secondary-alpha-light);
+}
+
+.thumbAmber {
+  background: var(--color-amber-500-alpha-light);
+}
+
+/* ── Project meta ───────────────────────────────────────────────────────── */
+
+.projectName {
+  font-size: var(--font-size-sm);
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.projectDate {
+  font-size: var(--font-size-xs);
+  color: var(--text-tertiary);
+  margin: 0;
+}
